@@ -21,8 +21,7 @@ jobs:
       with:
         dotnet-version: 6.0.x
     - name: Restore dependencies
-      run: dotnet restore
-      working-directory: webappmvc
+      run: dotnet restore webappmvc/webappmvc.sln
     - name: Build
       run: dotnet build --no-restore
     - name: Test
